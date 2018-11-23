@@ -1,6 +1,7 @@
-// import { pairElement } from './dna-pairing';
+/* eslint-disable */ 
+import { pairElement } from './dna-pairing';
 
-xdescribe('DNA pairing', () => {
+describe('DNA pairing', () => {
 
     test('pairElement("ATCGA") should return [["A","T"],["T","A"],["C","G"],["G","C"],["A","T"]]', () => {
         expect(JSON.stringify(pairElement("ATCGA"))).toBe('[["A","T"],["T","A"],["C","G"],["G","C"],["A","T"]]');

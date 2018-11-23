@@ -1,6 +1,7 @@
-// import { reverseString } from './reverse-string';
+/* eslint-disable */ 
+import { reverseString } from './reverse-string';
 
-xdescribe('reverse-string', () => {
+describe('reverse-string', () => {
     test('reverseString("hello") should return a string.', () => {
         expect(typeof reverseString('hello')).toBe('string');
     });

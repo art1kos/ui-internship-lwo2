@@ -1,7 +1,9 @@
-// import { isBoolean } from './is-boolean';
+
+/* eslint-disable */ 
+import { isBoolean } from './is-boolean';
 
 
-xdescribe('is-boolean', () => {
+describe('is-boolean', () => {
     test('isBoolean(true) should return true', () => {
         expect(isBoolean(true)).toBe(true);
     });

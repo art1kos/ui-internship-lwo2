@@ -1,6 +1,7 @@
-// import { destroyer } from './seek-destroy';
+/* eslint-disable */
+import { destroyer } from './seek-destroy';
 
-xdescribe('seek-destroy', () => {
+describe('seek-destroy', () => {
     test('destroyer([1, 2, 3, 1, 2, 3], 2, 3) should return [1, 1]', () => {
         expect(destroyer([1, 2, 3, 1, 2, 3], 2, 3)).toEqual([1, 1]);
     });

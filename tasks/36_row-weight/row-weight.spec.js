@@ -1,6 +1,7 @@
-// import { rowWeights } from './row-weight';
+/* eslint-disable */ 
+import { rowWeights } from './row-weight';
 
-xdescribe('row-weight', () => {
+describe('row-weight', () => {
     test(`rowWeights([13, 27, 49]) should  return [62, 27]`, () => {
         expect(rowWeights([13, 27, 49])).toEqual([62, 27]);
     });

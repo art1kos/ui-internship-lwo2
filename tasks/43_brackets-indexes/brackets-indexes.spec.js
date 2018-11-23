@@ -1,6 +1,7 @@
-// import { findCloseIndex } from './brackets-indexes';
+/* eslint-disable */
+import { findCloseIndex } from './brackets-indexes';
 
-xdescribe('brackets-indexes', () => {
+describe('brackets-indexes', () => {
   it('should return correct values', () => {
     expect(findCloseIndex('((1)23(45))(aB)', 1)).toBe(3);
     expect(findCloseIndex('((1)23(45))(aB)', 2)).toBe(-1);

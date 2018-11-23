@@ -1,6 +1,7 @@
-// import { reverseStringInRange } from './reverse-string-in-range';
+/* eslint-disable */ 
+import { reverseStringInRange } from './reverse-string-in-range';
 
-xdescribe('reverse-string-in-range', () => {
+describe('reverse-string-in-range', () => {
     test(`reverseStringInRange("codewars", [1, 5]) should return "cawedors"`, () => {
         expect(reverseStringInRange("codewars", [1, 5])).toBe('cawedors');
     });

@@ -1,6 +1,7 @@
-// import { repeatStringNumTimes } from './repeat-string';
+/* eslint-disable */
+import { repeatStringNumTimes } from './repeat-string';
 
-xdescribe('repeat-string', () => {
+describe('repeat-string', () => {
     test('repeatStringNumTimes("*", 3) should return "***"', () => {
         expect(repeatStringNumTimes("*", 3)).toBe('***');
     });

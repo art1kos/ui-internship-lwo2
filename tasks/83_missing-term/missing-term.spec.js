@@ -1,6 +1,7 @@
-// import { findMissing } from './missing-term';
+/* eslint-disable */ 
+import { findMissing } from './missing-term';
 
-xdescribe('find missing', () => {
+describe('find missing', () => {
     test("findMissing([1, 3, 5, 9, 11]) should return 7", () => {
         expect(findMissing([1, 3, 5, 9, 11])).toBe(7);
     });

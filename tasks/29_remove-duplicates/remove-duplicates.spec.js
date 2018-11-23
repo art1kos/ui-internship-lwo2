@@ -1,6 +1,7 @@
-// import { removeDuplicates } from './remove-duplicates';
+/* eslint-disable */
+import { removeDuplicates } from './remove-duplicates';
 
-xdescribe('remove-duplicates', () => {
+describe('remove-duplicates', () => {
     test(`removeDuplicates([1]) should return [1]`, () => {
         expect(removeDuplicates([1])).toEqual([1]);
     });

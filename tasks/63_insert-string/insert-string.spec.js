@@ -1,6 +1,7 @@
-// import { insert } from './insert-string';
+/* eslint-disable */ 
+import { insert } from './insert-string';
 
-xdescribe('Insert string', () => {
+describe('Insert string', () => {
 
     test("insert('We are doing some exercises.') should return ‘We are doing some exercises’", () => {
         expect(insert('We are doing some exercises.')).toBe('We are doing some exercises.');

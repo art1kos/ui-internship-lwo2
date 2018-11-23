@@ -1,6 +1,7 @@
-// import { unpackArray } from './unpack-elements';
+/* eslint-disable */
+import { unpackArray } from './unpack-elements';
 
-xdescribe('Unpack array', () => {
+describe('Unpack array', () => {
 
     test('unpackArray([[["a"]], [["b"]]]) should return ["a", "b"]', () => {
         expect(JSON.stringify(unpackArray([[["a"]], [["b"]]]))).toBe('["a","b"]');

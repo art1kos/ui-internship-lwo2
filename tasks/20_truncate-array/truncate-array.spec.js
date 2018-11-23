@@ -1,6 +1,7 @@
-// import { truncateArray } from './truncate-array';
+/* eslint-disable */
+import { truncateArray } from './truncate-array';
 
-xdescribe('truncate-array', () => {
+describe('truncate-array', () => {
     test('truncateArray([1, 2, 3], 2) should return [3]', () => {
         expect(truncateArray([1, 2, 3], 2)).toEqual([3]);
     });

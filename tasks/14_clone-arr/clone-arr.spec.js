@@ -1,6 +1,7 @@
-// import { cloneArr } from './clone-arr';
+/* eslint-disable */
+import { cloneArr } from './clone-arr';
 
-xdescribe('clone-arr', () => {
+describe('clone-arr', () => {
     test(`cloneArr([]) should return an array`, () => {
         expect(Array.isArray(cloneArr([]))).toBe(true);
     });

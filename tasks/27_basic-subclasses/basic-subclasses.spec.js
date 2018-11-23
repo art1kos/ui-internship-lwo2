@@ -1,6 +1,7 @@
-// import { God, Human, Man, Woman } from './basic-subclasses';
+/* eslint-disable */
+import { God, Human, Man, Woman } from './basic-subclasses';
 
-xdescribe('basic-subclasses', () => {
+describe('basic-subclasses', () => {
     const humans = God.create();
 
     test(`God should create two humans`, () => {

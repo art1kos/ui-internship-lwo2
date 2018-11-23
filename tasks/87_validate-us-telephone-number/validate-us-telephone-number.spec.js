@@ -1,6 +1,7 @@
-// import { telephoneCheck } from './validate-us-telephone-number';
+/* eslint-disable */
+import { telephoneCheck } from './validate-us-telephone-number';
 
-xdescribe('Validate US Telephone Numbers', () => {
+describe('Validate US Telephone Numbers', () => {
 
     test('telephoneCheck("555-555-5555") should return a boolean', () => {
         expect(typeof telephoneCheck("555-555-5555")).toBe('boolean');

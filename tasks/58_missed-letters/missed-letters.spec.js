@@ -1,7 +1,8 @@
-// import { findLetter } from './missed-letters';
+/* eslint-disable */ 
+import { findLetter } from './missed-letters';
 
 
-xdescribe('Missed letter', () => {
+describe('Missed letter', () => {
 
     test('findLetter("abce") should return "d".', () => {
         expect(findLetter("abce")).toBe("d");

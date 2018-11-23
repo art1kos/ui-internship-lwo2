@@ -1,6 +1,6 @@
 ### Unpack Elements
 
-Flatten a nested array. You must account for varying levels of nesting.
+  Flatten a nested array. You must account for varying levels of nesting.
 
 ```javascript
 

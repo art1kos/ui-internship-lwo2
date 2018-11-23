@@ -1,7 +1,8 @@
-// import { LinkedList } from './linked-list';
+/* eslint-disable */
+import { LinkedList } from './linked-list';
 
 
-xdescribe('LinkedList', () => {
+describe('LinkedList', () => {
     let list;
 
     beforeEach(() => {
@@ -62,7 +63,7 @@ xdescribe('LinkedList', () => {
         expect(list.tail).toBe(null);
     });
 
-    xdescribe('insertAfter method', () => {
+    describe('insertAfter method', () => {
         const firstValue = 5;
         const secondValue = 10;
         const valueToInsert = 30;
@@ -93,7 +94,7 @@ xdescribe('LinkedList', () => {
         });
     });
 
-    xdescribe('removeItem method', () => {
+    describe('removeItem method', () => {
         const firstValue = 1;
         const existedValue = 2;
         const notExistedValue = 3;

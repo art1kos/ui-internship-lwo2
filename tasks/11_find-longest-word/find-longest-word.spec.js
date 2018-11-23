@@ -1,6 +1,7 @@
-// import { findLongestWord } from './find-longest-word';
+/* eslint-disable */ 
+import { findLongestWord } from './find-longest-word';
 
-xdescribe('find-longest-word', () => {
+describe('find-longest-word', () => {
     test('findLongestWord("The quick brown fox jumped over the lazy dog") should return a number', () => {
         expect(typeof findLongestWord("The quick brown fox jumped over the lazy dog")).toBe('number');
     });

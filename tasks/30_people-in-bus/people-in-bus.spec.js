@@ -1,6 +1,7 @@
-// import { peopleInBus } from './people-in-bus';
+/* eslint-disable */    
+import { peopleInBus } from './people-in-bus';
 
-xdescribe('people-in-bus', () => {
+describe('people-in-bus', () => {
     test(`peopleInBus([[10,0],[3,5],[5,8]]) should return 5`, () => {
         expect(peopleInBus([[10,0],[3,5],[5,8]])).toBe(5);
     });

@@ -1,6 +1,7 @@
-// import { sumFibs } from './sum-odd-fibonacci';
+/* eslint-disable */ 
+import { sumFibs } from './sum-odd-fibonacci';
 
-xdescribe('Sum All Odd Fibonacci Numbers', () => {
+describe('Sum All Odd Fibonacci Numbers', () => {
 
     test('sumFibs(1) should return a number', () => {
         expect(typeof sumFibs(1)).toBe('number');

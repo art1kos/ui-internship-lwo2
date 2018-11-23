@@ -1,4 +1,5 @@
-// import { binaryDecode } from './binary-decode';
+/* eslint-disable */
+import { binaryDecode } from './binary-decode';
 
 export const TEST_BLOCKS = [
     {
@@ -23,7 +24,7 @@ export const TEST_BLOCKS = [
     }
 ];
 
-xdescribe('binary-decode', () => {
+describe('binary-decode', () => {
     test('should return a string', () => {
         expect(typeof binaryDecode()).toBe('string');
     });

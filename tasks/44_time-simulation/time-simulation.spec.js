@@ -1,6 +1,7 @@
-// import { SimTime } from './time-simulation';
+/* eslint-disable */
+import { SimTime } from './time-simulation';
 
-xdescribe('time-simulation', () => {
+describe('  ', () => {
     let sim = new SimTime();
     
     test(`time should be counted from zero`, () => {

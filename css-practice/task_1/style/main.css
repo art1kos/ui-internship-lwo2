@@ -1,0 +1,641 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+p {
+  font-size: 15px;
+  line-height: 1.5;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/* Header */
+.main-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 68px 0 72px;
+}
+.logo {
+  width: 40%;
+}
+.menu {
+  width: 54%;
+}
+.menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.menu li {
+  list-style: none;
+  text-transform: uppercase;
+}
+.menu li a {
+  font-family: "Playfair Display";
+  font-size: 17px;
+  color: #626262;
+}
+.menu li a:hover {
+  font-family: "Playfair Display";
+  font-size: 17px;
+  color: #000;
+}
+.menu-link {
+  text-decoration: none;
+}
+.baner img {
+  width: 100%;
+  padding: 0 0 72px;
+}
+/* Main content */
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+}
+.photodiary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-item-align: center;
+  align-self: center;
+  padding: 0 153px 0 149px;
+}
+.photodiary span {
+  font-family: Ubuntu;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #b4ad9e;
+  margin: 20px 0 19px 0;
+}
+.card-holder span {
+  font-family: Ubuntu;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #b4ad9e;
+  margin: 44px 0 19px 0;
+}
+.photodiary h2 {
+  color: #626262;
+  font-family: "Playfair Display";
+  font-size: 33px;
+  font-weight: normal;
+  margin-bottom:30px;
+}
+.photodiary p {
+  color: #626262;
+  font-family: "Playfair Display";
+  font-size: 16px;
+}
+.card-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 0 153px 0 149px;
+}
+.card {
+  width: 47%;
+}
+.card-rigth {
+  width: 47%;
+}
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 17px;
+  margin-top: 114px;
+}
+.row img {
+  width: 100%;
+  margin-bottom: 22px;
+}
+.row span {
+  font-family: Ubuntu;
+  color: #b4ad9e;
+  font-size: 14px;
+}
+.row h2 {
+  color: #626262;
+  font-family: "Playfair Display";
+  font-size: 33px;
+  margin: 17px 0 28px 0;
+  font-weight: normal;
+}
+.row p {
+  font-family: "Playfair Display";
+  color: #626262;
+  font-size: 16px;
+}
+/* Side Bar */
+.sidebar {
+  height: 284px;
+  background-color: #f0f0f0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  margin-bottom: -10px;
+  margin-top: 100px;
+}
+.sidebar h2 {
+  color: #333333;
+  font-family: "Playfair Display";
+  font-size: 35px;
+  font-weight: normal;
+  margin-top: 30px;
+}
+.form {
+  border-bottom: 2px solid #000;
+  margin-bottom: 37px; 
+}
+.form input[type="text"] {
+  border: none;
+  background-color:#f0f0f0;
+  width: 360px;
+  height: 40px;
+  outline: none;
+  font-size: 20px;
+  font-family: "Playfair Display";
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  padding-left: 7px;
+}
+.form input::-webkit-input-placeholder {
+  color: #626262;
+  font-size: 18px;
+  font-family: "Playfair Display";
+}
+.form input:-ms-input-placeholder {
+  color: #626262;
+  font-size: 18px;
+  font-family: "Playfair Display";
+}
+.form input::-ms-input-placeholder {
+  color: #626262;
+  font-size: 18px;
+  font-family: "Playfair Display";
+}
+.form input::placeholder {
+  color: #626262;
+  font-size: 18px;
+  font-family: "Playfair Display";
+}
+.form input[type="text"]:hover {
+  opacity: 0.4;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+/* Card Bar */
+.card-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+.card-bar .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 163px;
+  padding: 0 153px 0 149px;
+}
+.card-bar span {
+  font-family: Ubuntu;
+  text-transform: uppercase;
+}
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  margin-bottom: 100px;
+}
+.button .btn {
+  border: 1px solid #626262;
+  background-color: #fff;
+  padding: 17px 34px;
+  font-size: 21px;
+  text-align: center;
+  font-family: "Playfair Display";
+  color: #626262;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+.button .btn:hover {
+  background-color: #626262;
+  color: #fff;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+.button .btn:active {
+  opacity: 0.5;
+}
+/* Footer */
+.footer {
+  background-color: #f0f0f0;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 71px 0 149px;
+}
+.footer-menu {
+  width: 21%;
+}
+.footer-menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.footer-menu li {
+  list-style: none;
+}
+.footer-menu li a {
+  font-family: "Playfair Display";
+  font-size: 16px;
+  color: #000;
+}
+.footer-menu li a:hover {
+  color: #626262;
+}
+.footer-menu-link {
+  text-decoration: none;
+}
+.follow-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 15%;
+}
+.follow-link p {
+  font-family: "Playfair Display";
+  font-size: 16px;
+  color: #000000;
+}
+.fa-facebook-f {
+  color: #626262;
+}
+.fa-facebook-f:hover {
+  color:#3b5999;
+}
+.fa-twitter {
+  color: #626262;
+}
+.fa-twitter:hover {
+  color: #1dcaff;
+}
+.fa-instagram {
+  color: #626262;
+}
+.fa-instagram:hover {
+  color: #e4405f;
+}
+/* Responsive */
+@media only screen and (max-width: 960px) {
+ /* Header */
+  .header {
+      padding: 68px 50px 72px;
+ }
+  .menu li a {
+      font-size: 16px;
+      color: #626262;
+ }
+  .menu li a:hover {
+      color: #000;
+ }
+ /* Main content */
+  .photodiary {
+      padding: 0 50px 0 50px;
+ }
+  .photodiary span, .card-holder span {
+      font-size: 15px;
+      margin: 20px 0 20px 0;
+ }
+  .photodiary h2 {
+      font-size: 30px;
+      margin-bottom:10px;
+ }
+  .card-holder {
+      padding: 0 50px 0 50px;
+ }
+  .row {
+      margin-bottom: 70px;
+ }
+  .row img {
+      margin-bottom: 10px;
+ }
+  .row span {
+      font-size: 15px;
+ }
+  .row h2 {
+      font-size: 30px;
+ }
+ /* Side Bar */
+  .sidebar {
+      height: 200px;
+      margin-bottom: 70px;
+ }
+  .sidebar h2 {
+      font-size: 30px;
+ }
+  .form {
+      border-bottom: 1px solid #000;
+ }
+  .form img {
+      width: 20px;
+ }
+  .form input[type="text"] {
+      width: 300px;
+      height: 20px;
+      font-size: 15px;
+ }
+  .form input::-webkit-input-placeholder {
+      font-size: 15px;
+ }
+  .form input:-ms-input-placeholder {
+      font-size: 15px;
+ }
+  .form input::-ms-input-placeholder {
+      font-size: 15px;
+ }
+  .form input::placeholder {
+      font-size: 15px;
+ }
+ /* Card Bar */
+  .card-bar .row {
+      margin-bottom: 70px;
+      padding: 0 50px 0 50px;
+ }
+  .button {
+      margin-bottom: 50px;
+ }
+  .button .btn {
+      padding: 16px 32px;
+      font-size: 20px;
+ }
+ /* Footer */
+  .footer {
+      padding: 0 50px 0 50px;
+ }
+  .footer-menu {
+      width: 30%;
+ }
+  .footer-menu ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+ }
+  .footer-menu li a, .follow-link p, .fa-facebook-f, .fa-twitter, .fa-instagram {
+      font-size: 12px;
+ }
+  .fa-facebook-f:hover, .fa-twitter:hover, .fa-instagram:hover {
+      font-size: 12px;
+ }
+}
+@media only screen and (max-width: 600px) {
+ /* Header */
+  .main-header {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      position: relative;
+ }
+  .header {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+ }
+  .logo {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+ }
+  .menu {
+      margin-top: 50px;
+      width: 100%;
+ }
+  .menu ul{
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+ }
+  .menu li {
+      background-color: #fff;
+      line-height: 3;
+      opacity: 0.7;
+      border-bottom: 1px solid #000;
+      width: 100%;
+ }
+  .menu li:last-child {
+      border-bottom: none;
+ }
+  .menu li:hover {
+      background-color: rgba(240, 240, 240, 0.5);
+ }
+  .menu li a {
+      display: block;
+      text-align: center;
+      font-size: 15px;
+ }
+  .menu li a:hover {
+      font-size: 15px;
+ }
+  .baner {
+      width: 100%;
+ }
+  .baner img {
+      padding:0 0 72px;
+ }
+ /* Main content */
+  .card {
+      width: 100%;
+      margin-bottom: 40px;
+ }
+  .card-rigth {
+      width: 100%;
+ }
+  .row {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+ }
+  .row span {
+      font-size: 12px;
+ }
+  .row p {
+      font-size: 16px;
+ }
+ /* Side Bar */
+  .sidebar {
+      height: 150px;
+      margin-bottom: 30px;
+ }
+  .sidebar h2 {
+      font-size: 20px;
+ }
+  .form {
+      border-bottom: 1px solid #000;
+ }
+  .form img {
+      width: 20px;
+ }
+  .form input[type="text"] {
+      width: 200px;
+      height: 20px;
+ }
+  .form input::-webkit-input-placeholder {
+      font-size: 15px;
+ }
+  .form input:-ms-input-placeholder {
+      font-size: 15px;
+ }
+  .form input::-ms-input-placeholder {
+      font-size: 15px;
+ }
+  .form input::placeholder {
+      font-size: 15px;
+ }
+ /* Card Bar */
+  .card-bar .row {
+      margin-bottom: 30px;
+ }
+  .card-bar span {
+      font-size: 12px;
+ }
+  .button {
+      margin-bottom: 50px;
+ }
+  .button .btn {
+      padding: 8px 16px;
+      font-size: 14px;
+ }
+ /* Footer */
+  footer {
+      height: 50px;
+ }
+  .footer-menu {
+      width: 40% 
+ }
+  .follow-link {
+      width: 30%;
+ }
+  .fa-facebook-f, .fa-twitter, .fa-instagram, .follow-link p, .footer-menu li a {
+      font-size: 12px;
+ }
+  .fa-facebook-f:hover, .fa-twitter:hover, .fa-instagram:hover {
+      font-size: 12px;
+ }
+}

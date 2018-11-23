@@ -1,6 +1,7 @@
-// import { humanizeFormat} from './humanize-format';
+/* eslint-disable */
+import { humanizeFormat} from './humanize-format';
 
-xdescribe('humanize-format', () => {
+describe('humanize-format', () => {
     test('humanizeFormat() should return an empty string', () => {
         expect(humanizeFormat()).toBe('');
     });

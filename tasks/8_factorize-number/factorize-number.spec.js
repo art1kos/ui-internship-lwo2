@@ -1,6 +1,7 @@
-// import { factorialize } from './factorize-number';
+/* eslint-disable */ 
+import { factorialize } from './factorize-number';
 
-xdescribe('factorize-number', () => {
+describe('factorize-number', () => {
     test('should return a number.', () => {
         expect(typeof factorialize(5)).toBe('number');
     });

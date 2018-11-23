@@ -1,6 +1,7 @@
-// import { pairwise } from './pairwise';
+/* eslint-disable */
+import { pairwise } from './pairwise';
 
-xdescribe('Pairwise', () => {
+describe('Pairwise', () => {
 
 
     test('pairwise([1, 4, 2, 3, 0, 5], 7) should return 11', () => {

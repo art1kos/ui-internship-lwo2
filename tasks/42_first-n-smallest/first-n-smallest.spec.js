@@ -1,6 +1,7 @@
-// import { firstNSmallest } from './first-n-smallest';
+/* eslint-disable */ 
+import { firstNSmallest } from './first-n-smallest';
 
-xdescribe('first-n-smallest', () => {
+describe('first-n-smallest', () => {
     test(`firstNSmallest([1, 2, 3, 4, 5], 3) should return [1, 2, 3]`, () => {
         expect(firstNSmallest([1, 2, 3, 4, 5], 3)).toEqual([1, 2, 3]);
     });

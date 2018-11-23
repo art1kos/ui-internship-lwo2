@@ -1,6 +1,7 @@
-// import { nextInLine } from './stand-in-line';
+/* eslint-disable */ 
+import { nextInLine } from './stand-in-line';
 
-xdescribe('stand-in-line', () => {
+describe('stand-in-line', () => {
     test('nextInLine([], 1) should return 1', () => {
         expect(nextInLine([], 1)).toBe(1);
     });

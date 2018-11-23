@@ -1,6 +1,7 @@
-// import { findFriend } from './find-friend';
+/* eslint-disable */ 
+import { findFriend } from './find-friend';
 
-xdescribe('find-friend', () => {
+describe('find-friend', () => {
     test(`findFriend(['blue', 'blue', 'red', 'red', 'blue', 'green']) should return 1`, () => {
         expect(findFriend(['blue', 'blue', 'red', 'red', 'blue', 'green'])).toBe(1);
     });

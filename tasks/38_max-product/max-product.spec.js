@@ -1,6 +1,7 @@
-// import { maxProduct } from './max-product';
+/* eslint-disable */ 
+import { maxProduct } from './max-product';
 
-xdescribe('max-product', () => {
+describe('max-product', () => {
     test(`maxProduct([5, 8]) should return 40`, () => {
         expect(maxProduct([5, 8])).toBe(40);
     });

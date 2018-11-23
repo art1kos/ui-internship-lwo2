@@ -1,6 +1,7 @@
-// import { uniqueInOrder } from './unique-in-order';
+/* eslint-disable */ 
+import { uniqueInOrder } from './unique-in-order';
 
-xdescribe('unique-in-order', () => {
+describe('unique-in-order', () => {
     test(`uniqueInOrder('AAAABBBCCDAABBB') should return ['A', 'B', 'C', 'D', 'A', 'B']`, () => {
         expect(uniqueInOrder('AAAABBBCCDAABBB')).toEqual(['A', 'B', 'C', 'D', 'A', 'B']);
     });

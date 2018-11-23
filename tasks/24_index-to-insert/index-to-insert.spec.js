@@ -1,6 +1,7 @@
-// import { getIndexToInsert } from './index-to-insert';
+/* eslint-disable */
+import { getIndexToInsert } from './index-to-insert';
 
-xdescribe('index-to-insert', () => {
+describe('index-to-insert', () => {
     test('getIndexToInsert([10, 20, 30, 40, 50], 35) should return 3', () => {
         expect(getIndexToInsert([10, 20, 30, 40, 50], 35)).toBe(3);
     });

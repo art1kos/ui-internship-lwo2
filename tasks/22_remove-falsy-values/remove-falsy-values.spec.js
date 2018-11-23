@@ -1,6 +1,7 @@
-// import { removeFalsyValues } from './remove-falsy-values';
+/* eslint-disable */
+import { removeFalsyValues } from './remove-falsy-values';
 
-xdescribe('remove-falsy-values', () => {
+describe('remove-falsy-values', () => {
     test('removeFalsyValues([7, "ate", "", false, 9]) should return [7, "ate", 9]', () => {
         expect(removeFalsyValues([7, "ate", "", false, 9])).toEqual([7, "ate", 9]);
     });

@@ -1,6 +1,7 @@
-// import { deepClone } from './deep-object-clone';
+/* eslint-disable */
+import { deepClone } from './deep-object-clone';
 
-xdescribe('Deep object clone', () => {
+describe('Deep object clone', () => {
 
     test("deepClone({}) should return an object", () => {
         expect(typeof deepClone({})).toBe('object');

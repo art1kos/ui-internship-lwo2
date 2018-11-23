@@ -1,6 +1,7 @@
-// import { abbreviated } from './abbreviated-name';
+/* eslint-disable */ 
+import { abbreviated } from './abbreviated-name';
 
-xdescribe('Abbreviated name', () => {
+describe('Abbreviated name', () => {
 
     test("abbreviated('Verbovyi') should be a string", () => {
         expect(typeof abbreviated('Verbovyi')).toBe('string');

@@ -1,6 +1,7 @@
-// import { validBraces } from './valid-braces';
+/* eslint-disable */
+import { validBraces } from './valid-braces';
 
-xdescribe('Valid braces', () => {
+describe('Valid braces', () => {
 
     test('validBraces("(){}[]") should return true', () => {
         expect(validBraces("(){}[]")).toBe(true);

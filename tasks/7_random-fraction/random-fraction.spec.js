@@ -1,6 +1,7 @@
-// import { randomFraction } from './random-fraction';
+/* eslint-disable */ 
+import { randomFraction } from './random-fraction';
 
-xdescribe('random-fraction', () => {
+describe('random-fraction', () => {
     test('should return a number.', () => {
         expect(typeof randomFraction()).toBe('number');
     });

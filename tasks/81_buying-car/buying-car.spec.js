@@ -1,6 +1,7 @@
-// import { nbMonths } from './buying-car';
+/* eslint-disable */ 
+import { nbMonths } from './buying-car';
 
-xdescribe('Buying car', () => {
+describe('Buying car', () => {
 
     test("nbMonths(2000, 8000, 1000, 1.5) should return [6, 766];", () => {
         const result = nbMonths(2000, 8000, 1000, 1.5);

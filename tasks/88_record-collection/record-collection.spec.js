@@ -1,6 +1,7 @@
-// import { updateRecords } from './record-collection';
+/* eslint-disable */
+import { updateRecords } from './record-collection';
 
-xdescribe('Record collection', () => {
+describe('Record collection', () => {
 
     test('After updateRecords(5439, "artist", "ABBA"), artist should be "ABBA"', () => {
         const collection = updateRecords(5439, "artist", "ABBA");
