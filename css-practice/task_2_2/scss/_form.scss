@@ -53,13 +53,14 @@
       background: url(../images/check-mark.png);
       background-size: 20px;
       background-repeat: no-repeat;
-      background-position: 230px 15px;
+      background-position: right center;
+
     }
     .invalid {
       background: url(../images/warning-sign.png);
       background-size: 20px;
       background-repeat: no-repeat;
-      background-position: 230px 13px;
+      background-position: right center;
     }
 
     .blur_success {

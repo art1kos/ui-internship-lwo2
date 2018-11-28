@@ -11,18 +11,6 @@
             flex-grow: 1;
           }
         }
-        .valid {
-          background: url(../images/check-mark.png);
-          background-size: 20px;
-          background-repeat: no-repeat;
-          background-position: 200px 15px;
-        }
-        .invalid {
-          background: url(../images/warning-sign.png);
-          background-size: 20px;
-          background-repeat: no-repeat;
-          background-position: 200px 13px;
-        }
       }
     }  
   }
@@ -39,18 +27,6 @@
           &[type=submit] {
             width: 61%;
           }
-        }
-        .valid {
-          background: url(../images/check-mark.png);
-          background-size: 20px;
-          background-repeat: no-repeat;
-          background-position: 470px 15px;
-        }
-        .invalid {
-          background: url(../images/warning-sign.png);
-          background-size: 20px;
-          background-repeat: no-repeat;
-          background-position: 470px 13px;
         }
       }
 
