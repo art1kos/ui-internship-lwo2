@@ -1,0 +1,105 @@
+.form {
+  background: #323969;
+  padding-top: 6.3%;
+  padding-bottom: 5.8%;
+  text-align: center;
+  
+  h3 {
+    color: $white_color;
+  }
+
+  .inputs {
+    display: flex;
+    width: 79%;
+    margin: auto;
+    margin-top: 94px;
+    justify-content: space-between;
+    position: relative;
+    flex-wrap: wrap;
+
+    
+
+    .info_inp {
+
+      border: 1px solid $white_color;
+      background-color: #464c77;
+      border-radius: 3px;
+      width: 23%;
+      height: 48px;
+      color: #f6f5f3;
+      font-size: 16px;
+      padding: 0 26px;
+      outline: none;
+      box-sizing: border-box;
+      
+      
+
+      &::placeholder {
+        color: #f6f5f3;
+      }
+
+      &[type=submit] {
+        color: $white_color;
+        font-size: 16px;
+        border: 0;
+        background: $red_color;
+        width: 23%;
+        height: 50px;
+        padding: 0;
+      }
+    }
+
+    .valid {
+      background: url(../images/check-mark.png);
+      background-size: 20px;
+      background-repeat: no-repeat;
+      background-position: 150px 15px;
+    }
+    .invalid {
+      background: url(../images/warning-sign.png);
+      background-size: 20px;
+      background-repeat: no-repeat;
+      background-position: 160px 13px;
+    }
+
+    .blur_success {
+      background-color: #464c77ff;
+      border: 1px solid green;
+    }
+    .blur_error {
+      background-color: #464c77ff;
+      border: 1px solid $red_color;
+    }
+
+    .btn_disable {
+      cursor: not-allowed;
+      opacity: 0.7;
+    }
+
+    img {
+      position: absolute;
+      right: 29px;
+      top: -57px;
+      height: auto;
+    }
+  }
+
+  h6 {
+    font-size: 16px;
+    text-align: center;
+    color: #f6f5f3;
+    font-weight: 100;
+    margin: 3.4% 0 0 0;
+    @include spacing (.64px, -1px);
+
+    span {
+      text-decoration: underline;
+    }
+  }
+}
+#hint {
+  color: #fb8686;
+  font-size: 12px;
+}
+
+@import 'form_responsive';
