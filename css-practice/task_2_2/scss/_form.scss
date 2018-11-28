@@ -48,18 +48,18 @@
         padding: 0;
       }
     }
-
+    
     .valid {
       background: url(../images/check-mark.png);
       background-size: 20px;
       background-repeat: no-repeat;
-      background-position: 150px 15px;
+      background-position: 230px 15px;
     }
     .invalid {
       background: url(../images/warning-sign.png);
       background-size: 20px;
       background-repeat: no-repeat;
-      background-position: 160px 13px;
+      background-position: 230px 13px;
     }
 
     .blur_success {

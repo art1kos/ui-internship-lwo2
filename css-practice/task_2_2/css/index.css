@@ -509,13 +509,13 @@ header .container .small {
   background: url(../images/check-mark.png);
   background-size: 20px;
   background-repeat: no-repeat;
-  background-position: 150px 15px;
+  background-position: 230px 15px;
 }
 .form .inputs .invalid {
   background: url(../images/warning-sign.png);
   background-size: 20px;
   background-repeat: no-repeat;
-  background-position: 160px 13px;
+  background-position: 230px 13px;
 }
 .form .inputs .blur_success {
   background-color: #464c77ff;
@@ -564,6 +564,18 @@ header .container .small {
     margin-top: 24px;
     flex-grow: 1;
   }
+  .form .inputs .valid {
+    background: url(../images/check-mark.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 200px 15px;
+  }
+  .form .inputs .invalid {
+    background: url(../images/warning-sign.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 200px 13px;
+  }
 }
 @media screen and (max-width: 768px) {
   .form .inputs .info_inp {
@@ -572,6 +584,18 @@ header .container .small {
   }
   .form .inputs .info_inp[type=submit] {
     width: 61%;
+  }
+  .form .inputs .valid {
+    background: url(../images/check-mark.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 470px 15px;
+  }
+  .form .inputs .invalid {
+    background: url(../images/warning-sign.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 470px 13px;
   }
   .form h6 {
     font-size: 15px;
