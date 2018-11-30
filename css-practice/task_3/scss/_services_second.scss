@@ -106,6 +106,10 @@
           overflow: scroll;
           border: 1px solid #e5e5e5;
           transition: max-height 0.7s;
+          margin-bottom: 5px;
+        }
+        .panel_open{
+          max-height: 109px;
         }
       }
     }
