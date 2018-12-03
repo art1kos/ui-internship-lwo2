@@ -8,6 +8,7 @@
     align-items: center;
     justify-content: flex-start;
     padding: 98px 0px 126px 0px;
+    width: 100%;
    
     &_main {
       width: 80%;
@@ -17,6 +18,7 @@
     .all_slides {
       width: 300%;
       display: flex;
+      transition: .3s;
     }
 
     .slide {

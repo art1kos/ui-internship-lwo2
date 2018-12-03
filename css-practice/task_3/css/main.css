@@ -743,6 +743,7 @@ header .header_bottom .divider {
   align-items: center;
   justify-content: flex-start;
   padding: 62px 0px 63px 0px;
+  width: 100%;
 }
 .slider_container_main {
   width: 80%;
@@ -751,6 +752,7 @@ header .header_bottom .divider {
 .slider_container .all_slides {
   width: 300%;
   display: flex;
+  transition: 0.3s;
 }
 .slider_container .slide {
   display: flex;
@@ -1069,6 +1071,7 @@ header .header_bottom .divider {
   align-items: center;
   justify-content: flex-start;
   padding: 98px 0px 126px 0px;
+  width: 100%;
 }
 .slider_second_container_main {
   width: 80%;
@@ -1077,6 +1080,7 @@ header .header_bottom .divider {
 .slider_second_container .all_slides {
   width: 300%;
   display: flex;
+  transition: 0.3s;
 }
 .slider_second_container .slide {
   display: flex;
