@@ -52,6 +52,9 @@
           width: 100%;
         }
       }
+      .dsp_none {
+        display: none;
+      }
 
       &_accordion {
         width: 50%;
@@ -77,21 +80,24 @@
           }
         }
         
-        .accordion:after {
+        
+        .unactive:after {
           content: '\2304';
           color: #333333;
           font-weight: bold;
           margin-right: 50px;
           position: absolute;
+          font-size: 40px;
           right: -21px;
         }
-        
+
         .active:after {
           content: "\2303";
           color: #333333;
           font-weight: bold;
           margin-right: 50px;
           position: absolute;
+          font-size: 20px;
           right: -21px;
         }
         

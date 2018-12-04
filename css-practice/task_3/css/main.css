@@ -660,6 +660,9 @@ header .header_bottom .divider {
 .service_second_content_main_image img {
   width: 100%;
 }
+.service_second_content_main .dsp_none {
+  display: none;
+}
 .service_second_content_main_accordion {
   width: 50%;
   position: relative;
@@ -682,12 +685,13 @@ header .header_bottom .divider {
 .service_second_content_main_accordion .accordion img {
   margin-right: 15px;
 }
-.service_second_content_main_accordion .accordion:after {
+.service_second_content_main_accordion .unactive:after {
   content: "⌄";
   color: #333333;
   font-weight: bold;
   margin-right: 50px;
   position: absolute;
+  font-size: 40px;
   right: -21px;
 }
 .service_second_content_main_accordion .active:after {
@@ -696,6 +700,7 @@ header .header_bottom .divider {
   font-weight: bold;
   margin-right: 50px;
   position: absolute;
+  font-size: 20px;
   right: -21px;
 }
 .service_second_content_main_accordion .panel {
