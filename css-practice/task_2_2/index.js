@@ -99,13 +99,14 @@ playVideo.onclick = () => {
       const currPattern = new RegExp(el.getAttribute('pattern'));
       el.onkeyup = function() {
         const elHint = this.getAttribute('data-text');
+        const isValid = inputs.every((el) => el.classList.contains('blur_success'));
         if (el.classList.contains('blur_error')) {
           hint.innerHTML = elHint;
         } else {
           hint.innerHTML = '';
         }
         valid(currPattern, el);
-        if (inputs.every((el) => el.classList.contains('blur_success'))) {
+        if (isValid) {
           button.classList.remove('btn_disable');
         } else {
           button.classList.add('btn_disable');
@@ -114,16 +115,17 @@ playVideo.onclick = () => {
     });
   });
   const valid = (reg, el) => {
+    const inputClassList = el.classList;
     if (reg.test(el.value)) {
-      el.classList.add('blur_success');
-      el.classList.remove('blur_error');
-      el.classList.add('valid');
-      el.classList.remove('invalid');
+      inputClassList.add('blur_success');
+      inputClassList.remove('blur_error');
+      inputClassList.add('valid');
+      inputClassList.remove('invalid');
     } else {
-      el.classList.add('blur_error');
-      el.classList.remove('blur_success');
-      el.classList.add('invalid');
-      el.classList.remove('valid');
+      inputClassList.add('blur_error');
+      inputClassList.remove('blur_success');
+      inputClassList.add('invalid');
+      inputClassList.remove('valid');
     }
   };
 })();
