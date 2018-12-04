@@ -1,17 +1,59 @@
 .slider {
-  background-color: #f8f8f8;
+  background-color: #f8f8f8; 
+  display: flex;
 
   &_container {
     display: flex;
     flex-direction: row;
-    align-items:  center;
+    align-items: center;
     justify-content: flex-start;
-    padding-left: 210px;
-    padding-top: 62px;
-    padding-bottom: 60px;
+    padding: 62px 0px 63px 0px;
+    width: 100%;
+
+    &_main {
+      width: 80%;
+      overflow: hidden;
+    }
+
+    .all_slides {
+      width: 300%;
+      display: flex;
+      transition: .3s;
+    }
+
+    .slide {
+      display: flex;
+      align-items: center;
+      width: 80%;
+    }
+
+    &_arrow_left {
+      margin-left: 120px;
+
+      .fas {
+        font-size: 32px;
+        color: #999;
+        cursor: pointer;
+      }
+    }
+
+    &_arrow_right {
+      margin-left: 5px;
+
+      .fas {
+        font-size: 32px;
+        color: #999;
+        cursor: pointer;
+      }
+    }
+
+    &_image {
+      margin-left: 75px;
+      margin-top: 5px;
+    }
 
     &_content {
-      margin-left: 50px;
+      margin-left: 48px;
       width: 70%;
       margin-top: 6px;
 

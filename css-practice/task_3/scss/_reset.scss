@@ -3,12 +3,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;  
 }
 
 .container {
   max-width: 1400px;
   padding: 0 5%;
   margin: 0 auto;
+}
+
+main {
+  overflow: hidden;
 }
 
 a, h2, p, li {
