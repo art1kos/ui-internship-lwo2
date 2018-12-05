@@ -57,24 +57,6 @@ const video = document.querySelector('video');
 const playVideo = document.querySelector('.video-player');
 const continueVideo = document.querySelector('.fa-play-circle');
 const pauseVideo = document.querySelector('.fa-pause-circle');
-// playVideo.onclick = () => {
-//   if (video.paused) {
-//     hideEl(continueVideo);
-//     showEl(pauseVideo);
-//     video.play();
-//   } else {
-//     showEl(continueVideo);
-//     hideEl(pauseVideo);
-//     video.pause();
-//   }
-// };
-// .disp-none {
-//   display: none;
-// }
-// .disp-block {
-//   display: block;
-// }
-
 playVideo.onclick = () => {
   if (video.paused) {
     hideEl(continueVideo);
@@ -100,7 +82,8 @@ playVideo.onclick = () => {
       el.onkeyup = function() {
         const elHint = this.getAttribute('data-text');
         const isValid = inputs.every((el) => el.classList.contains('blur_success'));
-        if (el.classList.contains('blur_error')) {
+        const elContainClass = el.classList.contains('blur_error');
+        if (elContainClass) {
           hint.innerHTML = elHint;
         } else {
           hint.innerHTML = '';
@@ -116,7 +99,8 @@ playVideo.onclick = () => {
   });
   const valid = (reg, el) => {
     const inputClassList = el.classList;
-    if (reg.test(el.value)) {
+    const validRegEx = reg.test(el.value);
+    if (validRegEx) {
       inputClassList.add('blur_success');
       inputClassList.remove('blur_error');
       inputClassList.add('valid');
