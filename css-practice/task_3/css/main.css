@@ -1165,18 +1165,34 @@ header .header_bottom .divider {
 }
 .stories_content_info {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 110px;
+  flex-wrap: wrap;
 }
 .stories_content_info_object {
   width: 32%;
+  margin-bottom: 25px;
+}
+.stories_content_info_object:not(:nth-child(3n)) {
+  margin-right: 2%;
+}
+.stories_content_info_object h2 {
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .stories_content_info_object .img {
   width: 100%;
+  height: 100%;
+  max-height: 240px;
   position: relative;
 }
 .stories_content_info_object .img img {
   width: 100%;
+  height: inherit;
 }
 .stories_content_info_object .img .date {
   position: absolute;
@@ -1216,6 +1232,8 @@ header .header_bottom .divider {
   font-size: 15px;
   line-height: 24px;
   margin-top: 10px;
+  max-height: 72px;
+  overflow-y: auto;
 }
 .stories_content_info_object .divider {
   width: 100%;
@@ -1381,6 +1399,9 @@ header .header_bottom .divider {
   justify-content: flex-start;
   align-items: center;
   margin-bottom: 31px;
+}
+.footer_container_blogs_content img {
+  width: 30%;
 }
 .footer_container_blogs_content_text {
   margin-left: 20px;
