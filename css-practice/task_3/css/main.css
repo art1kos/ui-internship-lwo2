@@ -22,6 +22,10 @@ a, h2, p, li {
   list-style: none;
 }
 
+.body_popup {
+  overflow: hidden;
+}
+
 .header_background {
   background: #f38181e6;
 }
