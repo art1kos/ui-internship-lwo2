@@ -1,10 +1,12 @@
-/* global document */
+/* global document, fetch */
 const latestBlogs = document.querySelector('.stories_content_info');
 
 function latestBlogItem(model) {
-
   function parseDate(dateStr) {
-    const monthArr = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    const monthArr = [
+      'Jan', 'Feb', 'Mar', 'Apr', 'May',
+      'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec',
+    ];
     const day = new Date(dateStr).getDate() - 1;
     const month = monthArr[new Date(dateStr).getMonth() + 1];
     return {day: day, month: month};
@@ -33,7 +35,9 @@ function latestBlogItem(model) {
         <div class="stories_content_info_object_stats">
           <div class="img_view"><img src="./img/VIEW.png" alt="image"></div>
           <i>${watched}</i>
-          <div class="img_view"><img src="./img/SPEECH_BUBBLE_2.png" alt="image"></div>
+          <div class="img_view">
+            <img src="./img/SPEECH_BUBBLE_2.png" alt="image">
+          </div>
           <i>17</i>
         </div>
   `;
