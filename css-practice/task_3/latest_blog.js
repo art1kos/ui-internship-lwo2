@@ -59,11 +59,17 @@ function getDataFromSever() {
 }
 
 function showAllBlogs(res) {
-  const latestBlogsContent = res.blogs.filter((el) => res.latest.includes(el.id));
-  const footerBlogsContent = res.blogs.filter((el) => !res.latest.includes(el.id));
+  const latestBlogsContent = [];
+  const footerBlogsContent = [];
   const latestSection = document.querySelector('.stories_content_info');
   const footerSection = document.querySelector('.footer_container_blogs');
-
+  res.blogs.forEach((el) => {
+    if (res.latest.includes(el.id)) {
+      latestBlogsContent.push(el);
+    } else {
+      footerBlogsContent.push(el);
+    }
+  });
   latestBlogsContent.forEach((e) => {
     latestSection.appendChild(latestBlogItem(e));
   });
