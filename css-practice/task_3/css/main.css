@@ -1383,8 +1383,8 @@ header .header_bottom .divider {
 }
 .footer_container_blogs {
   width: 32%;
-  display: flex;
-  flex-direction: column;
+  max-height: 362px;
+  overflow-y: scroll;
 }
 .footer_container_blogs h2 {
   color: #333333;

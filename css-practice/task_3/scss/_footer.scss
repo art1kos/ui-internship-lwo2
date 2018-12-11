@@ -95,8 +95,8 @@
   }
   &_blogs {
     width: 32%;
-    display: flex;
-    flex-direction: column;
+    max-height: 362px;
+    overflow-y: scroll;
     
     h2 {
       color: #333333;
