@@ -1,7 +1,6 @@
 /* global document, fetch */
-
-function latestBlogItem(model) {
-  const {previewImg, title, watched, description} = model;
+function renderLatestBlogItem(model) {
+  const {previewImg, title, description, watched} = model;
   const {day, month} = parseDate(model.published);
   const template = document.createElement('div');
   template.classList.add('stories_content_info_object');
@@ -28,7 +27,7 @@ function latestBlogItem(model) {
   return template;
 }
 
-function footerBlogItem(model) {
+function renderFooterBlogItem(model) {
   const {previewImg, title} = model;
   const {day, month, year} = parseDate(model.published);
   const footerTemplate = document.createElement('div');
@@ -42,6 +41,11 @@ function footerBlogItem(model) {
 `;
   return footerTemplate;
 }
+
+function renderBlogs(container, blogs, renderer) {
+  blogs.forEach((el) => container.appendChild(renderer(el)));
+}
+
 
 function parseDate(dateStr) {
   const monthArr = [
@@ -59,23 +63,19 @@ function getDataFromSever() {
 }
 
 function showAllBlogs(res) {
-  const latestBlogsContent = [];
-  const footerBlogsContent = [];
-  const latestSection = document.querySelector('.stories_content_info');
-  const footerSection = document.querySelector('.footer_container_blogs');
+  const latestBlogs = [];
+  const footerBlogs = [];
+  const latestBlogsSection = document.querySelector('.stories_content_info');
+  const footerBlogsSection = document.querySelector('.footer_container_blogs');
   res.blogs.forEach((el) => {
     if (res.latest.includes(el.id)) {
-      latestBlogsContent.push(el);
+      latestBlogs.push(el);
     } else {
-      footerBlogsContent.push(el);
+      footerBlogs.push(el);
     }
   });
-  latestBlogsContent.forEach((e) => {
-    latestSection.appendChild(latestBlogItem(e));
-  });
-  footerBlogsContent.forEach((e) => {
-    footerSection.appendChild(footerBlogItem(e));
-  });
+  renderBlogs(latestBlogsSection, latestBlogs, renderLatestBlogItem);
+  renderBlogs(footerBlogsSection, footerBlogs, renderFooterBlogItem);
 }
 
 getDataFromSever();
