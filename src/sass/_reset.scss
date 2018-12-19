@@ -5,19 +5,18 @@
 }
 
 body {
-  background: $bgColor;
-  padding: 0 11%;
+  background: $bg-color;
 }
 
 a {
   text-decoration: none;
-  color: $colorBlack;
+  color: $black-color;
 }
 
 button {
   outline: none;
 }
+
 li {
   list-style: none;
 }
-
